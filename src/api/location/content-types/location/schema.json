@@ -17,16 +17,6 @@
       "required": true,
       "unique": true
     },
-    "lat": {
-      "type": "string",
-      "unique": true,
-      "required": true
-    },
-    "long": {
-      "type": "string",
-      "unique": true,
-      "required": true
-    },
     "restaurant": {
       "type": "relation",
       "relation": "manyToOne",
@@ -35,6 +25,16 @@
     },
     "googleMapsLink": {
       "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "lat": {
+      "type": "float",
+      "unique": true,
+      "required": true
+    },
+    "long": {
+      "type": "float",
       "unique": true,
       "required": true
     }
