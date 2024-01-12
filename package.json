@@ -11,10 +11,14 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.5.6",
-    "@strapi/plugin-users-permissions": "4.5.6",
+    "@strapi/plugin-documentation": "4.5.6",
     "@strapi/plugin-i18n": "4.5.6",
-    "better-sqlite3": "7.4.6"
+    "@strapi/plugin-users-permissions": "4.5.6",
+    "@strapi/strapi": "4.5.6",
+    "better-sqlite3": "7.4.6",
+    "nearby-sort": "^1.1.1",
+    "pg": "^8.11.3",
+    "pg-connection-string": "^2.6.2"
   },
   "author": {
     "name": "A Strapi developer"

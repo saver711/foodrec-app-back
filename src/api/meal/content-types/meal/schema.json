@@ -4,7 +4,8 @@
   "info": {
     "singularName": "meal",
     "pluralName": "meals",
-    "displayName": "Meal"
+    "displayName": "Meal",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -30,6 +31,31 @@
       "relation": "manyToOne",
       "target": "api::restaurant.restaurant",
       "inversedBy": "meals"
+    },
+    "likedBy": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "fav_meals"
+    },
+    "recommendations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recommendation.recommendation",
+      "mappedBy": "meal"
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": true
     }
   }
 }

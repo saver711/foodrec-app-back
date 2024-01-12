@@ -37,6 +37,11 @@
       "type": "float",
       "unique": true,
       "required": true
+    },
+    "address": {
+      "type": "text",
+      "required": true,
+      "unique": true
     }
   }
 }
